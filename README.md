@@ -93,8 +93,8 @@ The AI/dialogue layer maps its states (e.g. `GREETING`, `LISTENING`, `CORRECT`) 
 
 ```bash
 # Clone the repository
-git clone https://github.com/FatimaAzazmah/Faseelah-Character-Display.git
-cd Faseelah-Character-Display
+git clone https://github.com/FatimaAzazmah/Al-Faseelah-Character-Display.git
+cd Al-Faseelah-Character-Display
 
 # Install dependencies
 pip install -r requirements.txt
@@ -146,7 +146,7 @@ While the display is running:
 ## 📁 Project Structure
 
 ```
-Faseelah-Character-Display/
+Al-Faseelah-Character-Display/
 ├── character_display.py   # Core animation engine (expressions, talking, blinking)
 ├── ai_demo.py             # Example of an AI thread driving the character
 ├── main_integrated.py     # Entry point; connects to the dialogue layer if available
