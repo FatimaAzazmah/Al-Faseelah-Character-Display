@@ -1,6 +1,6 @@
-# 🌱 Faseelah — Animated Character Display
+# 🌱 Al-Faseelah — Animated Character Display
 
-> The on-screen animated face of **Faseelah**, the friendly plant character from **Al-Faseelah World** — an AI-powered educational toy for children aged 4–9. This module renders Faseelah's expressions, talking, and blinking on a Raspberry Pi screen, driven by a simple API.
+> The on-screen animated face of **Al-Faseelah**, the friendly plant character from **Al-Faseelah World** — an AI-powered educational toy for children aged 4–9. This module renders Al-Faseelah's expressions, talking, and blinking on a Raspberry Pi screen, driven by a simple API.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python 3.8+">
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/images/faseelah_expressions.png" alt="Faseelah's expressions" width="720">
+  <img src="docs/images/faseelah_expressions.png" alt="Al-Faseelah's expressions" width="720">
 </p>
 
 ---
@@ -45,7 +45,7 @@ This repository contains **only the character-display component** so it can be s
 
 ## 🔎 Overview
 
-Faseelah is a small plant character that reacts to a child during play: she greets, talks, listens, encourages, and shows emotions. This module is the **real-time animation engine** behind that face. It runs full-screen on a Raspberry Pi (800×480) using **Pygame**, and exposes a tiny API so the AI/dialogue layer can drive expressions and speech in real time.
+Al-Faseelah is a small plant character that reacts to a child during play: she greets, talks, listens, encourages, and shows emotions. This module is the **real-time animation engine** behind that face. It runs full-screen on a Raspberry Pi (800×480) using **Pygame**, and exposes a tiny API so the AI/dialogue layer can drive expressions and speech in real time.
 
 ---
 
@@ -65,7 +65,7 @@ Faseelah is a small plant character that reacts to a child during play: she gree
 
 - On startup, each expression image is loaded, its background is removed, and it is aligned to the same reference bounding box (built from the neutral pose) — so switching expressions never makes the body jump.
 - The main loop runs at 60 FPS: it processes queued commands, updates fades/talking/blinking, and redraws.
-- Commands are pushed onto a thread-safe queue, so an external AI thread can control Faseelah safely while Pygame owns the main thread.
+- Commands are pushed onto a thread-safe queue, so an external AI thread can control Al-Faseelah safely while Pygame owns the main thread.
 
 ---
 
